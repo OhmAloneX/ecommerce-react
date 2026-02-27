@@ -1,0 +1,65 @@
+/* Google Font (Put link in index.html head)
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+*/
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --container-width: 1200px;
+  --section-padding: 110px;
+  --primary: #111;
+  --accent: #ff4d4d;
+}
+
+.homepage {
+  font-family: "Inter", sans-serif;
+  color: #111;
+}
+
+/* Container */
+.container {
+  width: 100%;
+  max-width: var(--container-width);
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+section {
+  padding: var(--section-padding) 0;
+}
+
+/* Typography */
+h1 { font-size: 56px; font-weight: 800; }
+h2 { font-size: 32px; font-weight: 700; }
+h3 { font-size: 22px; font-weight: 600; }
+p  { color: #666; font-size: 15px; line-height: 1.6; }
+
+button {
+  padding: 12px 28px;
+  border-radius: 40px;
+  border: none;
+  background: var(--primary);
+  color: white;
+  cursor: pointer;
+  font-weight: 600;
+  transition: 0.3s ease;
+}
+
+button:hover {
+  background: var(--accent);
+  transform: translateY(-3px);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  section {
+    padding: 70px 0;
+  }
+
+  h1 { font-size: 38px; }
+  h2 { font-size: 26px; }
+}

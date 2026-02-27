@@ -1,0 +1,48 @@
+.deal {
+  background: #111;
+  color: white;
+  padding: 70px 0; /* shorter than before */
+}
+
+.deal-inner {
+  display: grid;
+  grid-template-columns: 1.1fr 1fr;
+  gap: 60px; /* reduced gap */
+  align-items: center;
+}
+
+.deal-left h4 {
+  color: #ff4d4d;
+  margin-bottom: 10px;
+  font-size: 14px;
+}
+
+.deal-left h2 {
+  margin-bottom: 15px;
+}
+
+.deal-left p {
+  color: #ccc;
+  margin-bottom: 25px;
+  max-width: 450px;
+}
+
+.deal-img {
+  width: 100%;
+  max-width: 350px; /* smaller */
+  aspect-ratio: 1/1;
+  background: #333;
+  border-radius: 20px;
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .deal-inner {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .deal-img {
+    margin: 30px auto 0;
+  }
+}

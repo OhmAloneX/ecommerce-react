@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-function App() {
+export default function App() {
   const a = 0;
   const [count, setCount] = useState(0);
   const students = ["Anne ", " Bob", " Charlie"];
@@ -26,20 +26,7 @@ function App() {
         <li key={index}>{students}</li>
       ))}
     </ul>
-
-
-
-
-
-
-
-
-
-
-
-
-
     </>
   );
 }
-export default App;
+

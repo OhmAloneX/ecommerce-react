@@ -69,3 +69,22 @@ function ToDoList() {
 }
 
 export default ToDoList;
+
+
+
+<Card
+          key={product.id}
+          title={product.title}
+          price={product.price}
+          image={product.image}
+        />
+
+
+
+
+
+
+
+
+
+
