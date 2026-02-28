@@ -5,7 +5,7 @@ export default function Card({ title, price }) {
     <div className="card">
       <div className="card-img"></div>
       <h3>{title}</h3>
-      <p>${price}</p>
+      <p>₱{price}</p>
     </div>
   );
 }
