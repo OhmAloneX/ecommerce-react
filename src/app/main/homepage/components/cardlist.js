@@ -1,5 +1,5 @@
 import "./cardlist.css";
-import Card from "../../../../components/ui/card";
+
 import ball1 from "../../../../components/images/basketball1.png";
 import ball2 from "../../../../components/images/basketball2.png";
 import ball3 from "../../../../components/images/basketball3.png";
@@ -15,7 +15,7 @@ export default function CardList() {
     { id: 1, name: "Pro Grip Basketball", price: "$49.99", image: ball1 },
     { id: 2, name: "Street Series Ball", price: "$39.99", image: ball2 },
     { id: 3, name: "Elite Match Ball", price: "$59.99", image: ball3 },
-    { id: 4, name: "Training Ball", price: "$29.99", image: ball4 },
+    { id: 4, name: "Training Ball", price: "$59.99", image: ball4 },
     { id: 5, name: "Indoor Leather Ball", price: "$54.99", image: ball5 },
     { id: 6, name: "Outdoor Rubber Ball", price: "$34.99", image: ball6 },
     { id: 7, name: "Youth Size 6 Ball", price: "$27.99", image: ball7 },

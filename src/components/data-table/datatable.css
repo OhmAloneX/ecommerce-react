@@ -1,0 +1,79 @@
+/* datatable.css */
+
+/* Container */
+.table-container {
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  overflow-x: auto; /* horizontal scroll if needed */
+}
+
+/* Table */
+.product-table {
+  width: 100%;
+  border-collapse: collapse;
+  table-layout: fixed; /* fixed widths */
+  box-sizing: border-box;
+}
+
+/* Header and cells */
+.product-table th,
+.product-table td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  box-sizing: border-box;
+}
+
+/* Column widths */
+.product-table th:nth-child(1),
+.product-table td:nth-child(1) { width: 5%; }
+.product-table th:nth-child(2),
+.product-table td:nth-child(2) { width: 10%; }
+.product-table th:nth-child(3),
+.product-table td:nth-child(3) { width: 35%; word-wrap: break-word; }
+.product-table th:nth-child(4),
+.product-table td:nth-child(4) { width: 20%; }
+.product-table th:nth-child(5),
+.product-table td:nth-child(5) { width: 30%; word-wrap: break-word; }
+
+/* Header style */
+.product-table thead {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.product-table th {
+  cursor: pointer;
+}
+
+/* Rows */
+.product-table tbody tr:nth-child(even) { background-color: #f9f9f9; }
+.product-table tbody tr:hover { background-color: #e0f7fa; transition: 0.2s; }
+
+/* Pagination */
+.pagination {
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+  gap: 5px;
+}
+
+.pagination button {
+  padding: 5px 10px;
+  border: 1px solid #4CAF50;
+  background-color: white;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.pagination button:hover { background-color: #4CAF50; color: white; }
+.pagination button:disabled { opacity: 0.5; cursor: not-allowed; }
+
+/* Search input */
+.search-input {
+  padding: 6px;
+  width: 250px;
+  margin-bottom: 10px;
+}

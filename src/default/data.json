@@ -1,0 +1,13 @@
+[
+  { "id": 1, "name": "Hammer", "price": 150, "category": "Tools" },
+  { "id": 2, "name": "Screwdriver", "price": 80, "category": "Tools" },
+  { "id": 3, "name": "Drill Machine", "price": 2500, "category": "Tools" },
+  { "id": 4, "name": "Wrench", "price": 120, "category": "Tools" },
+  { "id": 5, "name": "Pliers", "price": 95, "category": "Tools" },
+  { "id": 6, "name": "Paint Brush", "price": 60, "category": "Hardware" },
+  { "id": 7, "name": "Ladder", "price": 1800, "category": "Equipment" },
+  { "id": 8, "name": "Measuring Tape", "price": 110, "category": "Tools" },
+  { "id": 9, "name": "Chisel", "price": 140, "category": "Tools" },
+  { "id": 10, "name": "Safety Gloves", "price": 75, "category": "Safety" },
+  { "id": 11, "name": "Safety Gloadsdves", "price": 775, "category": "Safefghty" }
+]
