@@ -1,0 +1,227 @@
+/* =========================================
+   GLOBAL TABLE CONTAINER
+========================================= */
+.table-container {
+  position: relative;
+  width: 100%;
+  padding: 24px;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f9fafb;
+  min-height: 100vh;
+}
+
+/* =========================================
+   SEARCH INPUT
+========================================= */
+.search-input {
+  width: 100%;
+  max-width: 400px;
+  padding: 10px 14px;
+  margin-bottom: 20px;
+  font-size: 14px;
+  border-radius: 8px;
+  border: 1px solid #d1d5db;
+  outline: none;
+  transition: 0.2s ease;
+}
+
+.search-input:focus {
+  border-color: #4f46e5;
+  box-shadow: 0 0 0 3px rgba(79, 70, 229, 0.15);
+}
+
+/* =========================================
+   TABLE DESIGN
+========================================= */
+.product-table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: #ffffff;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.06);
+}
+
+/* Header */
+.product-table thead {
+  background-color: #f3f4f6;
+}
+
+.product-table th {
+  padding: 14px;
+  text-align: left;
+  font-size: 14px;
+  font-weight: 600;
+  color: #374151;
+  cursor: pointer;
+  user-select: none;
+  border-bottom: 1px solid #e5e7eb;
+  transition: 0.2s;
+}
+
+.product-table th:hover {
+  background-color: #e5e7eb;
+}
+
+/* Body */
+.product-table td {
+  padding: 14px;
+  font-size: 14px;
+  border-bottom: 1px solid #f1f1f1;
+  color: #4b5563;
+}
+
+/* Zebra rows */
+.product-table tbody tr:nth-child(even) {
+  background-color: #fafafa;
+}
+
+/* Hover */
+.product-table tbody tr:hover {
+  background-color: #eef2ff;
+  transition: 0.2s;
+}
+
+/* Clickable row cursor */
+.product-table tbody tr {
+  cursor: pointer;
+}
+
+/* Checkbox column width */
+.product-table th:first-child,
+.product-table td:first-child {
+  width: 50px;
+  text-align: center;
+}
+
+/* =========================================
+   PAGINATION
+========================================= */
+.pagination {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 20px;
+}
+
+.pagination button {
+  padding: 8px 14px;
+  border-radius: 8px;
+  border: 1px solid #d1d5db;
+  background: #ffffff;
+  cursor: pointer;
+  font-size: 13px;
+  transition: 0.2s ease;
+}
+
+.pagination button:hover:not(:disabled) {
+  background-color: #4f46e5;
+  color: white;
+  border-color: #4f46e5;
+}
+
+.pagination button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+/* Active page */
+.pagination button[style*="bold"] {
+  background-color: #4f46e5;
+  color: white;
+  border-color: #4f46e5;
+}
+
+/* =========================================
+   SLIDING SIDE PANEL (NOT MODAL)
+========================================= */
+.side-panel {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 420px; /* desktop width */
+  max-width: 100%;
+  height: 100%;
+  background: #ffffff;
+  box-shadow: -8px 0 25px rgba(0, 0, 0, 0.12);
+  padding: 30px;
+  box-sizing: border-box;
+  transform: translateX(100%);
+  transition: transform 0.35s ease;
+  z-index: 2000;
+  overflow-y: auto;
+}
+
+/* When active */
+.side-panel.active {
+  transform: translateX(0);
+}
+
+/* Panel Title */
+.side-panel h2 {
+  margin-top: 0;
+  margin-bottom: 20px;
+  font-size: 22px;
+  font-weight: 600;
+  color: #111827;
+}
+
+/* Panel Text */
+.side-panel p {
+  margin-bottom: 14px;
+  font-size: 15px;
+  color: #374151;
+}
+
+/* Close Button */
+.side-panel button {
+  margin-top: 20px;
+  padding: 10px 18px;
+  border-radius: 8px;
+  border: none;
+  background-color: #4f46e5;
+  color: white;
+  font-size: 14px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.side-panel button:hover {
+  background-color: #4338ca;
+}
+
+/* =========================================
+   RESPONSIVE DESIGN
+========================================= */
+@media (max-width: 1024px) {
+  .side-panel {
+    width: 380px;
+  }
+}
+
+@media (max-width: 768px) {
+  .table-container {
+    padding: 16px;
+  }
+
+  .product-table th,
+  .product-table td {
+    padding: 10px;
+    font-size: 13px;
+  }
+
+  .side-panel {
+    width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .search-input {
+    max-width: 100%;
+  }
+
+  .pagination {
+    justify-content: center;
+  }
+}
