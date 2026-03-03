@@ -21,7 +21,7 @@ export default function Features() {
       <div className="container features-inner">
         {items.map((item, index) => (
           <div key={index} className="feature">
-            <div className="feature-icon">★</div>
+            <div className="feature-icon"></div>
             <h3>{item.title}</h3>
             <p>{item.desc}</p>
           </div>

@@ -11,13 +11,24 @@
 :root {
   --container-width: 1200px;
   --section-padding: 110px;
-  --primary: #111;
-  --accent: #ff4d4d;
+  --primary: #0B1F34;
+  --accent: #F15A29;
+  --bg: #F7F8FA;
+  --text: #2B2F33;
+  --muted: #666;
+  --success: #2BB673;
+  --radius-sm: 12px;
+  --radius-md: 16px;
+  --radius-lg: 24px;
+  --shadow-sm: 0 4px 12px rgba(0,0,0,0.06);
+  --shadow-md: 0 12px 28px rgba(0,0,0,0.08);
+  --shadow-lg: 0 24px 60px rgba(0,0,0,0.10);
 }
 
 .homepage {
   font-family: "Inter", sans-serif;
-  color: #111;
+  color: var(--text);
+  background: white;
 }
 
 /* Container */
@@ -36,7 +47,7 @@ section {
 h1 { font-size: 56px; font-weight: 800; }
 h2 { font-size: 32px; font-weight: 700; }
 h3 { font-size: 22px; font-weight: 600; }
-p  { color: #666; font-size: 15px; line-height: 1.6; }
+p  { color: var(--muted); font-size: 15px; line-height: 1.6; }
 
 button {
   padding: 12px 28px;
@@ -52,6 +63,13 @@ button {
 button:hover {
   background: var(--accent);
   transform: translateY(-3px);
+}
+
+/* Focus visibility */
+:focus-visible {
+  outline: 3px solid var(--accent);
+  outline-offset: 2px;
+  border-radius: var(--radius-sm);
 }
 
 /* Responsive */
