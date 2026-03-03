@@ -1,4 +1,7 @@
 import "./deal.css";
+import Image from "../../../../components/ui/image";
+import promoFallback from "../../../../components/images/basketball4.png";
+import dealSection from "../../../../components/images/dealsection.jpg"
 
 export default function Deal() {
   return (
@@ -15,7 +18,13 @@ export default function Deal() {
         </div>
 
         <div className="deal-right">
-          <div className="deal-img"></div>
+          <Image
+            src={dealSection}
+            alt="TrueGrip microfiber leather basketball photo"
+            aspect="1-1"
+            sizes="(max-width: 768px) 80vw, 350px"
+            fallbackSrc={promoFallback}
+          />
         </div>
       </div>
     </section>

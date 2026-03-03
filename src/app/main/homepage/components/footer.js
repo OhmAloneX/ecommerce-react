@@ -1,11 +1,14 @@
 import "./footer.css";
+import logo from "../../../../components/images/courtking-logo.svg";
 
 export default function Footer() {
   return (
     <footer className="footer">
       <div className="container footer-inner">
         <div className="footer-col">
-          <h3>SHOP.COM</h3>
+          <div className="brand-logo">
+            <img src={logo} alt="CourtKing" />
+          </div>
           <p>
             Premium Basketball Equipment Store bringing you the best trends and quality
             products.
@@ -42,7 +45,7 @@ export default function Footer() {
       </div>
 
       <div className="footer-bottom">
-        © 2026 SHOP.CO. All rights reserved.
+        © 2026 CourtKing. All rights reserved.
       </div>
     </footer>
   );

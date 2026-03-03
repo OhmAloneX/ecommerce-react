@@ -28,7 +28,13 @@
 .homepage {
   font-family: "Inter", sans-serif;
   color: var(--text);
-  background: white;
+  background:
+    linear-gradient(120deg, rgba(241,90,41,0.06), rgba(11,31,52,0.06)),
+    repeating-linear-gradient(135deg, rgba(255,255,255,0.03) 0, rgba(255,255,255,0.03) 2px, transparent 2px, transparent 22px),
+    radial-gradient(circle at 20% 70%, rgba(241,90,41,0.07), transparent 60%),
+    radial-gradient(circle at 85% 20%, rgba(11,31,52,0.07), transparent 55%);
+  background-size: 200% 200%, auto, auto, auto;
+  animation: gradientShift 20s ease infinite;
 }
 
 /* Container */
@@ -63,6 +69,12 @@ button {
 button:hover {
   background: var(--accent);
   transform: translateY(-3px);
+}
+
+@keyframes gradientShift {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
 }
 
 /* Focus visibility */

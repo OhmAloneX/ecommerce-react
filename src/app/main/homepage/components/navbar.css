@@ -14,8 +14,14 @@
 }
 
 .logo {
-  font-weight: 700;
-  font-size: 20px;
+  display: inline-flex;
+  align-items: center;
+}
+
+.logo img {
+  height: 32px;
+  width: auto;
+  display: block;
 }
 
 .nav-links {
@@ -30,12 +36,13 @@
 }
 
 .nav-links li:hover {
-  color: #ff4d4d;
+  color: var(--accent);
 }
 
 .nav-icons {
   display: flex;
   gap: 15px;
+  color: var(--primary);
 }
 
 .hamburger {

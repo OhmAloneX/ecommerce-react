@@ -1,5 +1,5 @@
 .deal {
-  background: #111;
+  background: var(--primary);
   color: white;
   padding: 70px 0; /* shorter than before */
 }
@@ -12,7 +12,7 @@
 }
 
 .deal-left h4 {
-  color: #ff4d4d;
+  color: var(--accent);
   margin-bottom: 10px;
   font-size: 14px;
 }
@@ -31,7 +31,7 @@
   width: 100%;
   max-width: 350px; /* smaller */
   aspect-ratio: 1/1;
-  background: #333;
+  background: rgba(255,255,255,0.1);
   border-radius: 20px;
 }
 

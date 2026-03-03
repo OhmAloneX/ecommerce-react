@@ -1,5 +1,5 @@
 .footer {
-  background: #111;
+  background: var(--primary);
   color: white;
   padding-top: 100px;
 }
@@ -9,6 +9,13 @@
   grid-template-columns: repeat(4, 1fr);
   gap: 50px;
   padding-bottom: 60px;
+}
+
+.brand-logo img {
+  height: 36px;
+  width: auto;
+  display: block;
+  margin-bottom: 12px;
 }
 
 .footer-col h4 {
@@ -27,7 +34,7 @@
 }
 
 .footer-col li:hover {
-  color: #ff4d4d;
+  color: var(--accent);
 }
 
 .newsletter {

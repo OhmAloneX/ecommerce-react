@@ -5,6 +5,11 @@
   gap: 25px;
 }
 
+/* Reduce bottom spacing for tighter layout with CardList */
+.categories {
+  padding-bottom: 50px;
+}
+
 /* Base Style */
 .cat {
   background: #eee;

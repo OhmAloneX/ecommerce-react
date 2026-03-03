@@ -4,7 +4,7 @@ export default function Features() {
   const items = [
     {
       title: "Free Shipping",
-      desc: "Free delivery on orders over $75 nationwide.",
+      desc: "Free delivery on orders over ₱75 nationwide.",
     },
     {
       title: "Official Size 7",

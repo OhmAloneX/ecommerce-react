@@ -1,5 +1,6 @@
 import { useState } from "react";
 import "./navbar.css";
+import logo from "../../../../components/images/courtking-logo.svg";
 
 export default function Navbar() {
   const [open, setOpen] = useState(false);
@@ -7,7 +8,9 @@ export default function Navbar() {
   return (
     <nav className="navbar">
       <div className="container navbar-inner">
-        <div className="logo">SHOP.COM</div>
+        <a className="logo" href="/" aria-label="CourtKing Home">
+          <img src={logo} alt="CourtKing" />
+        </a>
 
         <ul className={`nav-links ${open ? "active" : ""}`}>
           <li>Home</li>
