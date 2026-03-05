@@ -45,6 +45,16 @@
   color: var(--primary);
 }
 
+.nav-icon {
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.nav-icon:hover {
+  color: var(--accent);
+  transform: translateY(-2px);
+}
+
 .hamburger {
   display: none;
   font-size: 26px;

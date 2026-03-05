@@ -1,6 +1,7 @@
 import { useState } from "react";
 import "./navbar.css";
 import logo from "../../../../components/images/courtking-logo.svg";
+import { Search, ShoppingCart, User } from "lucide-react";
 
 export default function Navbar() {
   const [open, setOpen] = useState(false);
@@ -21,9 +22,9 @@ export default function Navbar() {
         </ul>
 
         <div className="nav-icons">
-          <span>🔍</span>
-          <span>🛒</span>
-          <span>👤</span>
+          <Search size={20} strokeWidth={1.5} className="nav-icon" />
+          <ShoppingCart size={20} strokeWidth={1.5} className="nav-icon" />
+          <User size={20} strokeWidth={1.5} className="nav-icon" />
         </div>
 
         <div className="hamburger" onClick={() => setOpen(!open)}>
